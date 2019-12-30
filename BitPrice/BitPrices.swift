@@ -12,13 +12,10 @@ import RxSwift
 import Moya
 import Moya_ModelMapper
 
-class BitPrice {
-    private var timer: Timer?
-    private var currencies: Observable<[CryptoCurrency]?>
+class BitPrices {
     private var currencyTrackerModel: CurrencyTrackerModel!
 
     init() {
-        self.currencies = Observable<[CryptoCurrency]?>.empty()
         self.currencyTrackerModel = CurrencyTrackerModel(provider: MoyaProvider())
     }
     
