@@ -12,14 +12,14 @@ import RxSwift
 import Moya
 import Moya_ModelMapper
 
-class BitPrices {
+public class BitPrices {
     private var currencyTrackerModel: CurrencyTrackerModel!
 
-    init() {
+    public init() {
         self.currencyTrackerModel = CurrencyTrackerModel(provider: MoyaProvider())
     }
     
-    func getCurrencies() -> Observable<[CryptoCurrency]?> {
+    public func getCurrencies() -> Observable<[CryptoCurrency]?> {
         return currencyTrackerModel.trackCurrencies()
     }
 }
