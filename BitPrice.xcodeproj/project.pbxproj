@@ -60,8 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				431FB89E23B7D2BD00911B4E /* BitPrice.h */,
+				431FB8AA23B96BF800911B4E /* Magic.swift */,
 				431FB8AC23B96D3300911B4E /* Model */,
-				431FB8AF23B9795600911B4E /* Networking */,
 				431FB8B023B9796200911B4E /* Export */,
 				431FB89F23B7D2BD00911B4E /* Info.plist */,
 			);
@@ -75,14 +75,6 @@
 				431FB8AD23B96D6100911B4E /* CurrencyTrackerModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		431FB8AF23B9795600911B4E /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				431FB8AA23B96BF800911B4E /* Magic.swift */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		431FB8B023B9796200911B4E /* Export */ = {
