@@ -61,28 +61,12 @@
 			children = (
 				431FB89E23B7D2BD00911B4E /* BitPrice.h */,
 				431FB8AA23B96BF800911B4E /* Magic.swift */,
-				431FB8AC23B96D3300911B4E /* Model */,
-				431FB8B023B9796200911B4E /* Export */,
+				431FB8A823B968DD00911B4E /* CryptoCurrency.swift */,
+				431FB8AD23B96D6100911B4E /* CurrencyTrackerModel.swift */,
+				431FB8A623B7F99100911B4E /* BitPrice.swift */,
 				431FB89F23B7D2BD00911B4E /* Info.plist */,
 			);
 			path = BitPrice;
-			sourceTree = "<group>";
-		};
-		431FB8AC23B96D3300911B4E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				431FB8A823B968DD00911B4E /* CryptoCurrency.swift */,
-				431FB8AD23B96D6100911B4E /* CurrencyTrackerModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		431FB8B023B9796200911B4E /* Export */ = {
-			isa = PBXGroup;
-			children = (
-				431FB8A623B7F99100911B4E /* BitPrice.swift */,
-			);
-			path = Export;
 			sourceTree = "<group>";
 		};
 		60F04711B830A5DAA3E3F977 /* Pods */ = {
