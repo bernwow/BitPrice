@@ -6,6 +6,6 @@ Pod::Spec.new do |s|
   s.authors      = "Bern"
   s.license      = "MIT"
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://github.com/bernwow/BitPrice", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/bernwow/BitPrice", :branch => "master", :tag => "#{s.version}" }
   s.source_files = "Sources/**/*"
 end
