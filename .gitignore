@@ -1,4 +1,6 @@
 Podfile.lock
 Pods/
+build/
 UserInterfaceState.xcuserstate
 xcschememanagement.plist
+IDEFindNavigatorScopes.plist

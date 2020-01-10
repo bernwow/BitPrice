@@ -18,11 +18,11 @@
 		24D0F3D0BF158C97A5465EAE /* Pods-BitPrice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice.debug.xcconfig"; path = "Target Support Files/Pods-BitPrice/Pods-BitPrice.debug.xcconfig"; sourceTree = "<group>"; };
 		431FB89B23B7D2BD00911B4E /* BitPrice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BitPrice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		431FB89E23B7D2BD00911B4E /* BitPrice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BitPrice.h; sourceTree = "<group>"; };
-		431FB89F23B7D2BD00911B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		431FB8A623B7F99100911B4E /* BitPrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitPrices.swift; sourceTree = "<group>"; };
 		431FB8A823B968DD00911B4E /* CryptoCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 		431FB8AA23B96BF800911B4E /* Magic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic.swift; sourceTree = "<group>"; };
 		431FB8AD23B96D6100911B4E /* CurrencyTrackerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTrackerModel.swift; sourceTree = "<group>"; };
+		439B8A5423C8574F0031CCA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA4F4BFEDDB3F32CB1432F5 /* Pods-BitPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPrice.release.xcconfig"; path = "Target Support Files/Pods-BitPrice/Pods-BitPrice.release.xcconfig"; sourceTree = "<group>"; };
 		A99B749FDE8B1FB70A0A27F3 /* Pods_BitPrice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitPrice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -59,12 +59,12 @@
 		431FB89D23B7D2BD00911B4E /* BitPrice */ = {
 			isa = PBXGroup;
 			children = (
+				439B8A5423C8574F0031CCA8 /* Info.plist */,
 				431FB89E23B7D2BD00911B4E /* BitPrice.h */,
 				431FB8AA23B96BF800911B4E /* Magic.swift */,
 				431FB8A823B968DD00911B4E /* CryptoCurrency.swift */,
 				431FB8AD23B96D6100911B4E /* CurrencyTrackerModel.swift */,
 				431FB8A623B7F99100911B4E /* BitPrices.swift */,
-				431FB89F23B7D2BD00911B4E /* Info.plist */,
 			);
 			path = BitPrice;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = HPPU73C57K;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -357,7 +357,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = HPPU73C57K;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
