@@ -22,4 +22,8 @@ public class BitPrices {
     public func getCurrencies() -> Observable<[CryptoCurrency]?> {
         return currencyTrackerModel.trackCurrencies()
     }
+    
+    public func getCurrency(currencyId: String) -> Observable<[CryptoCurrency]?> {
+        return currencyTrackerModel.trackCurrency(currencyId: currencyId)
+    }
 }

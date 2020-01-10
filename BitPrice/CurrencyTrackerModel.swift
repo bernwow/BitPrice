@@ -21,9 +21,21 @@ struct CurrencyTrackerModel {
         return getCurrencies()
     }
     
+    func trackCurrency(currencyId: String) -> Observable<[CryptoCurrency]?> {
+        return getCurrency(currencyId: currencyId)
+    }
+    
     internal func getCurrencies() -> Observable<[CryptoCurrency]?> {
         return self.provider.rx
             .request(Magic.currencies)
+            .debug()
+            .mapOptional(to: [CryptoCurrency].self)
+            .asObservable()
+    }
+    
+    internal func getCurrency(currencyId: String) -> Observable<[CryptoCurrency]?> {
+        return self.provider.rx
+            .request(Magic.currency(currencyId: currencyId))
             .debug()
             .mapOptional(to: [CryptoCurrency].self)
             .asObservable()

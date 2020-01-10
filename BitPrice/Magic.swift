@@ -17,6 +17,7 @@ private extension String {
 
 enum Magic {
     case currencies
+    case currency(currencyId: String)
 }
 
 extension Magic: TargetType {
@@ -29,6 +30,8 @@ extension Magic: TargetType {
         switch self {
         case .currencies:
             return "ticker/"
+        case .currency(let currencyId):
+            return "ticker/\(currencyId)"
         }
     }
     var method: Moya.Method {
@@ -36,14 +39,16 @@ extension Magic: TargetType {
     }
     var parameters: [String: Any]? {
         switch self {
-        case .currencies:
+        default: do {
             return [:]
+            }
         }
     }
     var sampleData: Data {
         switch self {
-        case .currencies:
+        default: do {
             return "".data(using: .utf8)!
+            }
         }
     }
     var task: Task {
